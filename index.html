@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Academic personal website for Mingyue Xu, a PhD student in Computer Science."
+    />
+    <title>Mingyue Xu | Computer Science PhD Student</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['\\(', '\\)']],
+          displayMath: [['\\[', '\\]']]
+        }
+      };
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+      async>
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Mingyue Xu homepage">
+        <span class="brand-mark">MX</span>
+        <span>Mingyue Xu</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#service">Service</a>
+        <!-- <a href="#visitors">Visitors</a> -->
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <h1>Mingyue Xu</h1>
+          <p class="lead">
+            I am a thid-year PhD student in Computer Science at 
+            <a href="https://www.cs.purdue.edu/index.html">Purdue University</a> 
+            advised by <a href="https://stevehanneke.com">Prof. Steve Hanneke</a>. 
+            I am working on foundations of machine learning. 
+            My research interests lie broadly at the intersection of learning theory 
+            and algorithmic statistics, as well as their potential extensions to 
+            modern artificial intelligence. 
+            I studied Mathematics at 
+            <a href="https://www.math.sjtu.edu.cn/Default/index">SJTU</a> 
+            for undergraduate. I am fortunate enough to be able to work with 
+            several erudite Professors and fantastic collaborators, including 
+            <a href="https://www.cs.columbia.edu/~djhsu">Prof. Daniel Hsu</a>, 
+            <a href="https://www.columbia.edu/~skk2175">Prof. Samory Kpotufe</a>,
+            <a href="https://sites.google.com/view/itaysafran/home">Prof. Itay Safran</a>,
+            <a href="https://sites.google.com/view/galvardi/home">Prof. Gal Vardi</a>,
+            <a href="https://www.cityu.edu.hk/stfprofile/ganyuan.htm">Gan Yuan</a>,
+            <a href="https://phijack.github.io">Hongao Wang</a>.
+          </p>
+          <div class="hero-actions" aria-label="Academic profile links">
+            <a class="button primary" href="mailto:xu1864@purdue.edu">Email</a>
+            <a class="button" href="#" aria-label="Download CV">CV</a>
+            <a class="button" href="https://scholar.google.com/citations?user=lh1lDYYAAAAJ&hl=en&oi=ao" aria-label="Google Scholar profile">Scholar</a>
+          </div>
+        </div>
+        <aside class="profile-panel" aria-label="Profile summary">
+          <img
+            src="assets/research-banner.png"
+            alt="Abstract visualization of computer science research with networks and data nodes"
+          />
+          <div class="profile-details">
+            <p><strong>Affiliation</strong><span>Department of Computer Science <br> Purdue University, West Lafayette, IN</span></p>
+            <p><strong>Office</strong><span>DSAI, Neighborhood 3135</span></p>
+            <p><strong>Email</strong><span>xu1864@purdue.edu</span></p>
+          </div>
+        </aside>
+      </section>
+
+      <!-- <section class="section-grid">
+        <div class="section-heading">
+          <h2>Recent News</h2>
+        </div>
+        <div class="timeline" aria-label="Recent updates">
+          <article>
+            <time datetime="2026-04">Apr 2026</time>
+            <p>
+              Two papers got accepted by ICML, 2026.
+            </p>
+          </article>
+        </div>
+      </section> -->
+
+      <section class="section-grid" id="research">
+        <div class="section-heading">
+          <h2>Topics of Interests</h2>
+          <p class="eyebrow">Research Interests</p>
+        </div>
+        <div class="interest-grid">
+          <article class="interest-card">
+            <h3>Statistical Learning Theory</h3>
+            <p>
+              To understand the statistical limits of the learning performance 
+              under variants of the PAC (Probably Approximately Correct) model 
+              such as universal learning, multitask learning, 
+              meta learning and multi-distribution learning.
+            </p>
+          </article>
+          <article class="interest-card">
+            <h3>Algorithmic Statistics</h3>
+            <p>
+              To develop efficient learning/estimating algorithms that admit 
+              certain beneficial aspects such as sample efficiency, adaptivity,
+              robustness. Related topics include algorithmic data selection,
+              adaptive learning, adversarially robustness, etc.
+            </p>
+          </article>
+          <article class="interest-card">
+            <h3>Deep Learning Theory</h3>
+            <p>
+              To provably argue the tremendous success of 
+              modern deep learning architectures 
+              (e.g., neural networks, transformers), 
+              with a focus on their impressive generalization capabilities.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-grid" id="publications">
+        <div class="section-heading">
+          <h2>Publications</h2>
+          <p class="eyebrow">\( \small (\alpha-\beta) \): alphabetical ordering, *: equal contributions</p>
+        </div>
+        <div class="publication-list">
+          <article class="publication">
+            <p class="venue">Preprint, 2026</p>
+            <h3>Optimal Learning under Tsybakov Noise</h3>
+            <p>
+              Steve Hanneke, Hongao Wang, <strong>Mingyue Xu</strong> \( \small (\alpha-\beta) \).
+            </p>
+            <!-- <div class="pub-links">
+              <a href="#">Paper</a>
+              <a href="#">Arxiv</a>
+            </div> -->
+          </article>
+          <article class="publication">
+            <p class="venue">The 43rd International Conference on Machine Learning (ICML, 2026 - <span style="color: red;">Spotlight</span>)</p>
+            <h3>To Grok Grokking: Provable Grokking in Ridge Regression</h3>
+            <p>
+              <strong>Mingyue Xu</strong>, Gal Vardi, Itay Safran.
+            </p>
+            <div class="pub-links">
+              <!-- <a href="#">Paper</a> -->
+              <a href="https://arxiv.org/abs/2601.19791">Arxiv</a>
+            </div>
+          </article>
+          <article class="publication">
+            <p class="venue">The 43rd International Conference on Machine Learning (ICML, 2026)</p>
+            <h3>When More Data Doesn't Help: Limits of Adaptation in Multitask Learning</h3>
+            <p>
+              Steve Hanneke, <strong>Mingyue Xu</strong> \( \small (\alpha-\beta) \).
+            </p>
+            <div class="pub-links">
+              <!-- <a href="#">Paper</a> -->
+              <a href="https://arxiv.org/abs/2601.20774">Arxiv</a>
+            </div>
+          </article>
+          <article class="publication">
+            <p class="venue">The 38th Annual Conference on Learning Theory (COLT, 2025)</p>
+            <h3>Universal Rates of ERM for Agnostic Learning</h3>
+            <p>
+              Steve Hanneke, <strong>Mingyue Xu</strong> \( \small (\alpha-\beta) \).
+            </p>
+            <div class="pub-links">
+              <a href="https://proceedings.mlr.press/v291/hanneke25b.html">Paper</a>
+              <a href="https://arxiv.org/abs/2506.14110">Arxiv</a>
+            </div>
+          </article>
+          <article class="publication">
+            <p class="venue">SIAM Journal on Mathematics of Data Science (SIMODS, 2025)</p>
+            <h3>Efficient Estimation of the Central Mean Subspace via Smoothed Gradient Outer Products</h3>
+            <p>
+              Gan Yuan\(^*\), <strong>Mingyue Xu</strong>\(^*\), Samory Kpotufe, Daniel Hsu.
+            </p>
+            <div class="pub-links">
+              <a href="https://epubs.siam.org/doi/abs/10.1137/23M1626700">Paper</a>
+              <a href="https://arxiv.org/abs/2312.15469">Arxiv</a>
+            </div>
+          </article>
+          <article class="publication">
+            <p class="venue">The 38th Annual Conference on Neural Information Processing Systems (NeurIPS, 2024)</p>
+            <h3>Universal Rates of Empirical Risk Minimization</h3>
+            <p>
+              Steve Hanneke, <strong>Mingyue Xu</strong> \( \small (\alpha-\beta) \).
+            </p>
+            <div class="pub-links">
+              <a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/d2e48b68e0b91f8b1c2ac8acb929c5e5-Abstract-Conference.html">Paper</a>
+              <a href="https://arxiv.org/abs/2412.02810">Arxiv</a>
+            </div>
+          </article>
+          <article class="publication">
+            <p class="venue">IEEE Transactions on Information Theory (TIT, 2023)</p>
+            <h3>Distributed Semi-supervised Sparse Statistical Inference</h3>
+            <p>
+              Jiyuan Tu, Weidong Liu, Xiaojun Mao, <strong>Mingyue Xu</strong>.
+            </p>
+            <div class="pub-links">
+              <a href="https://ieeexplore.ieee.org/abstract/document/10354015?casa_token=xBFNnM9HE8oAAAAA:QgDZmgV_2pipgblCIrTZ8qcraDPY4wQwlBh_QvKjAhqrY6TRPZmk31EhSn1GdWo5ozQohoKYY8U">Paper</a>
+              <a href="https://arxiv.org/abs/2306.10395">Arxiv</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-grid" id="teaching">
+        <div class="section-heading">
+          <h2>Teaching</h2>
+          <p class="eyebrow">Teaching assistant, Purdue University</p>
+        </div>
+        <div class="compact-list">
+          <p>
+            CS182: Foundations of Computer Science, Spring 2025, Spring 2026.
+          </p>
+          <p>
+            CS251: Data Structures and Algorithms, Fall 2023, Spring 2024, Fall 2024.
+          </p>
+          <p>
+            CS381: Introduction to the Analysis of Algorithms, Fall 2025.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-grid" id="service">
+        <div class="section-heading">
+          <h2>Service</h2>
+          <p class="eyebrow">Professional service</p>
+        </div>
+        <div class="compact-list">
+          <p>
+            Reviewer: International Conference on Learning Representations
+            (ICLR), 2026.
+          </p>
+          <p>
+            Reviewer: International Conference on Machine Learning (ICML),
+            2026.
+          </p>
+        </div>
+      </section>
+
+      <!-- <section class="section-grid" id="visitors">
+        <div class="section-heading">
+          <h2>Map</h2>
+          <p class="eyebrow">Visitors</p>
+        </div>
+        <div class="visitor-card">
+          <div class="visitor-copy">
+            <h3>Visitor Locations</h3>
+            <p>
+              Recent visits by geography, shown as a compact academic homepage
+              map.
+            </p>
+          </div>
+          <div
+            class="visitor-map"
+            aria-label="Visitor location map"
+            data-clustrmaps-id="REPLACE_WITH_YOUR_CLUSTRMAPS_ID"
+          >
+            <div class="map-placeholder">
+              Add your ClustrMaps ID to enable the live visitor map.
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="contact-band" id="contact">
+        <div>
+          <h2>Let’s Connect</h2>
+          <p>
+            I am always happy to discuss research ideas and potential collaborations.
+          </p>
+          <p>
+            Feel free to contact me if you are interested in my works.
+          </p>
+        </div>
+        <a class="button primary" href="mailto:mingyuexu@example.edu">xu1864@purdue.edu</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year">2026</span> Mingyue Xu.</p>
+      <!-- <p>Built as a lightweight academic website.</p> -->
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
