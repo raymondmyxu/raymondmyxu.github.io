@@ -279,6 +279,15 @@ h3 {
   align-self: start;
 }
 
+#research {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
+}
+
+#research .section-heading {
+  position: static;
+}
+
 .timeline,
 .publication-list,
 .project-list,
@@ -457,10 +466,6 @@ h3 {
     margin-bottom: 24px;
   }
 
-  .interest-grid {
-    grid-template-columns: 1fr;
-  }
-
   .contact-band .button {
     margin-top: 24px;
   }
@@ -471,6 +476,12 @@ h3 {
 
   .site-footer p + p {
     margin-top: 8px;
+  }
+}
+
+@media (max-width: 700px) {
+  .interest-grid {
+    grid-template-columns: 1fr;
   }
 }
 
